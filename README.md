@@ -53,6 +53,11 @@ Keep the WordPress site up until the new one resolves, then retire it.
 
 ## 3. Editing the site
 
+> For the day-to-day version of this — add a paper, add a student, push —
+> see **[UPDATING.md](UPDATING.md)**. It's one page. This section is the
+> fuller reference.
+
+
 Everything you will realistically want to change lives in the `_data/` files and `_config.yml`.
 
 ### Add a publication: `_data/publications.yml`
