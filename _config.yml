@@ -1,0 +1,99 @@
+# ---------------------------------------------------------------------------
+#  Site settings: edit this file to change anything that appears site-wide.
+#  After editing, commit and push. GitHub Pages rebuilds automatically.
+# ---------------------------------------------------------------------------
+
+title: Fernando Rodriguez
+tagline: Research Scientist, Thomas H. Gosnell School of Life Sciences, RIT
+description: >-
+  Fernando Rodriguez, Ph.D. Molecular biologist working at the junction of
+  molecular evolution, comparative genomics and epigenetics: gene silencing,
+  transposable elements, and horizontal gene transfer in metazoans.
+
+url: "https://rodriguezf.org"
+baseurl: ""
+lang: en
+
+# --- Personal details ------------------------------------------------------
+author:
+  name: Fernando Rodriguez
+  suffix: Ph.D.
+  role: Research Scientist
+  school: Thomas H. Gosnell School of Life Sciences
+  college: College of Science
+  university: Rochester Institute of Technology
+  university_short: RIT
+  office: Orange Hall 1311
+  address: Rochester, NY 14623
+  email: frvsbi@rit.edu
+  phone: "585-475-2811"
+  # Replace with your own photo. Drop the file in assets/img/ and put the
+  # filename here. A square image of at least 600×600 px works best.
+  photo: /assets/img/portrait.svg
+  photo_alt: "Portrait of Fernando Rodriguez"
+  # Your CV as a PDF. Keep the file at assets/cv.pdf in the repo and replace it
+  # whenever the CV changes; the filename stays the same, so no links break.
+  # This one setting drives the "Download PDF" button on the CV page and the
+  # "See the CV" link on the Teaching page. Comment it out to hide both.
+  cv_pdf: /assets/cv.pdf
+
+# --- Profile links ---------------------------------------------------------
+# Delete a line to hide that link; add your real URLs where marked TODO.
+profiles:
+  - name: RIT directory
+    url: https://www.rit.edu/directory/frvsbi-fernando-rodriguez
+  - name: ORCID
+    url: https://orcid.org/0000-0003-4044-8734
+  # - name: Google Scholar
+  #   url: https://scholar.google.com/citations?user=   # TODO
+  # - name: ResearchGate
+  #   url: https://www.researchgate.net/profile/        # TODO
+  # - name: Web of Science
+  #   url: https://www.webofscience.com/wos/author/record/  # TODO
+  # - name: GitHub
+  #   url: https://github.com/                          # TODO
+
+# --- Navigation ------------------------------------------------------------
+nav:
+  - title: About
+    url: /
+  - title: Research
+    url: /research/
+  - title: Publications
+    url: /publications/
+  - title: Students
+    url: /students/
+  - title: Teaching
+    url: /teaching/
+  - title: CV
+    url: /cv/
+  # An item with a `menu:` becomes a dropdown instead of a link.
+  # Add or remove entries here and the menu follows.
+  - title: Resources
+    menu:
+      - title: GitHub
+        url: https://github.com/cascoamarillo
+        note: cascoamarillo
+      - title: TE Hub
+        url: https://tehub.org/
+        note: Transposable element resources
+
+# --- Build settings --------------------------------------------------------
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .github

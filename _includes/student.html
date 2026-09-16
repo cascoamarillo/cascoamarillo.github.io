@@ -1,0 +1,18 @@
+{% assign s = include.student %}
+<li class="pub student-row">
+  <div class="pub-year">{{ s.year }}</div>
+  <div>
+    <p class="student-name">{{ s.name }}{% if s.degree %} <span class="tag">{{ s.degree }}</span>{% endif %}</p>
+    <p class="student-affil">{{ s.affiliation }}</p>
+    <p class="student-project">{{ s.project }}</p>
+    {% if s.publication %}
+    <p class="student-pub">
+      {% if s.publication.doi %}
+      <a class="paper" href="https://doi.org/{{ s.publication.doi }}" rel="noopener"><span class="paper-mark" aria-hidden="true">↗</span>{{ s.publication.label }}</a>
+      {% else %}
+      <span class="paper paper-pending"><span class="paper-mark" aria-hidden="true">◦</span>{{ s.publication.label }}</span>
+      {% endif %}
+    </p>
+    {% endif %}
+  </div>
+</li>

@@ -1,0 +1,235 @@
+# ===========================================================================
+#  PUBLICATIONS
+#  ---------------------------------------------------------------------------
+#  To add a new paper: copy the block below, paste it at the TOP of `articles:`
+#  and fill it in. Nothing else needs changing; the page rebuilds itself.
+#
+#    - year: 2027
+#      authors: "Smith A, Rodriguez F, Jones B"
+#      title: "Title of the paper, sentence case"
+#      journal: "Journal Name"
+#      detail: "12(3):123-145"     # volume(issue):pages, optional
+#      doi: "10.1234/abcd.5678"    # optional, without the https://doi.org/ part
+#      pdf: "filename.pdf"         # optional; file lives in assets/pdfs/
+#      tag: "Editorial"            # optional little label: Review, Editorial, Chapter...
+#      note: "Selected article"    # optional one-line note shown under the entry
+#
+#  "Rodriguez F" is bolded automatically wherever it appears in `authors`,
+#  so keep that exact spelling.
+# ===========================================================================
+
+articles:
+  - year: 2026
+    authors: "Peredo EL, Kulp R, Rodriguez F, Weintraub MN, Anand M, Bixler S, Koller J, Lee C, Mathai D, Tuytschaevers S, Kumar G"
+    title: "Metagenome-assembled genomes from biological soil crusts in sandy sediments of Kitty Todd Nature Preserve, OH, USA"
+    journal: "Microbiology Resource Announcements"
+    detail: "e00380-26"
+    doi: "10.1128/mra.00380-26"
+
+  - year: 2024
+    authors: "Nowell RW, Rodriguez F, Hecox-Lea BJ, Mark Welch DB, Arkhipova IR, Barraclough TG, Wilson CG"
+    title: "Bdelloid rotifers deploy horizontally acquired biosynthetic genes against a fungal pathogen"
+    journal: "Nature Communications"
+    detail: "15:5787"
+    doi: "10.1038/s41467-024-49919-1"
+
+  - year: 2023
+    authors: "Arkhipova IR, Yushenova IA, Rodriguez F"
+    title: "Shaping eukaryotic epigenetic systems by horizontal gene transfer"
+    journal: "BioEssays"
+    detail: "45(7):e2200232"
+    doi: "10.1002/bies.202200232"
+    pdf: "rodriguez_2023_bioessays.pdf"
+    tag: "Review"
+
+  - year: 2023
+    authors: "Rodriguez F, Arkhipova IR"
+    title: "An overview of best practices for transposable element identification, classification, and annotation in eukaryotic genomes"
+    journal: "In: Branco MR, de Mendoza Soler A (eds), Transposable Elements. Methods in Molecular Biology, vol. 2607. Humana, New York, NY"
+    pdf: "rodriguez_2023_te.pdf"
+    tag: "Chapter"
+
+  - year: 2022
+    authors: "Rodriguez F, Yushenova IA, DiCorpo D, Arkhipova IR"
+    title: "Bacterial N4-methylcytosine as an epigenetic mark in eukaryotic DNA"
+    journal: "Nature Communications"
+    detail: "13:1072"
+    doi: "10.1038/s41467-022-28471-w"
+    pdf: "rodriguez_2022_methylcytosine-euk.pdf"
+
+  - year: 2022
+    authors: "Darras H, De Souza Araujo N, Baudry L, Guiglielmoni N, Lorite P, Marbouty M, Rodriguez F, Arkhipova I, Koszul R, Flot JF, Aron S"
+    title: "Chromosome-level genome assembly and annotation of two lineages of the ant Cataglyphis hispanica: stepping stones towards genomic studies of hybridogenesis and thermal adaptation in desert ants"
+    journal: "Peer Community Journal"
+    detail: "2:e40"
+    doi: "10.24072/pcjournal.140"
+    pdf: "rodriguez_2022_cataglyphis-assembly.pdf"
+
+  - year: 2021
+    authors: "Craig RJ, Yushenova IA, Rodriguez F, Arkhipova IR"
+    title: "An ancient clade of Penelope-like retroelements with permuted domains is present in the green lineage and protists, and dominates many invertebrate genomes"
+    journal: "Molecular Biology and Evolution"
+    detail: "38(11):5005-5020"
+    doi: "10.1093/molbev/msab225"
+    pdf: "rodriguez_2021_penelope-elements.pdf"
+
+  - year: 2021
+    authors: "Schön I, Rodriguez F, Dunn M, Martens K, Shribak M, Arkhipova IR"
+    title: "A survey of transposon landscapes in the putative ancient asexual ostracod Darwinula stevensoni"
+    journal: "Genes"
+    detail: "12(3):401"
+    doi: "10.3390/genes12030401"
+    pdf: "rodriguez_2021_darwinula-tes.pdf"
+
+  - year: 2021
+    authors: "Nowell RW, Wilson CG, Almeida P, Schiffer PH, Fontaneto D, Becks L, Rodriguez F, Arkhipova IR, Barraclough TG"
+    title: "Evolutionary dynamics of transposable elements in bdelloid rotifers"
+    journal: "eLife"
+    detail: "10:e63194"
+    doi: "10.7554/eLife.63194"
+    pdf: "rodriguez_2021_te-dynamics-rotifers.pdf"
+
+  - year: 2021
+    authors: "Kalendar R, Sabot F, Rodriguez F, Alix K, Natali L, Karlov GI"
+    title: "Editorial: Mobile elements and plant genome evolution, comparative analyzes and computational tools"
+    journal: "Frontiers in Plant Science"
+    detail: "12:735134"
+    doi: "10.3389/fpls.2021.735134"
+    pdf: "rodriguez_2021_me-plant-evolution.pdf"
+    tag: "Editorial"
+
+  - year: 2020
+    authors: "Vakhrusheva OA, Mnatsakanova EA, Galimov YR, Neretina TV, Gerasimov ES, Naumenko SA, Ozerova SG, Zalevsky AO, Yushenova IA, Rodriguez F, Arkhipova IR, Penin AA, Logacheva MD, Bazykin GA, Kondrashov AS"
+    title: "Genomic signatures of recombination in a natural population of the bdelloid rotifer Adineta vaga"
+    journal: "Nature Communications"
+    detail: "11:6421"
+    doi: "10.1038/s41467-020-19614-y"
+    pdf: "rodriguez_2020_genomic-recombination.pdf"
+
+  - year: 2019
+    authors: "Nedoluzhko AV, Sharko FS, Lê BM, Tsygankova SV, Boulygina ES, Rastorguev SM, Sokolov AS, Rodriguez F, Mazur AM, Polilov AA, Benton R, Evgen'ev MB, Arkhipova IR, Prokhortchouk EB, Skryabin KG"
+    title: "A partial genome assembly of the miniature parasitoid wasp, Megaphragma amalphitanum"
+    journal: "PLOS ONE"
+    detail: "14(12):e0226485"
+    doi: "10.1371/journal.pone.0226485"
+    pdf: "rodriguez_2019_wasp-genome.pdf"
+
+  - year: 2018
+    authors: "Rodriguez F, Arkhipova IR"
+    title: "Transposable elements and polyploid evolution in animals"
+    journal: "Current Opinion in Genetics & Development"
+    detail: "49:115-123"
+    doi: "10.1016/j.gde.2018.04.003"
+    pdf: "rodriguez_2018_polyploid-evolution.pdf"
+    tag: "Review"
+
+  - year: 2017
+    authors: "Pérez T, Rodriguez F, Fernández M, Albornoz J, Domínguez A"
+    title: "Ancient mitochondrial pseudogenes reveal hybridization between distant lineages in the evolution of the Rupicapra genus"
+    journal: "Gene"
+    detail: "628:63-71"
+    doi: "10.1016/j.gene.2017.07.035"
+    pdf: "rodriguez_2017_ancient-mitochondrial.pdf"
+
+  - year: 2017
+    authors: "Arkhipova IR, Yushenova IA, Rodriguez F"
+    title: "Giant reverse transcriptase-encoding transposable elements at telomeres"
+    journal: "Molecular Biology and Evolution"
+    detail: "34(9):2245-2257"
+    doi: "10.1093/molbev/msx159"
+    pdf: "rodriguez_2017_giant-tes.pdf"
+
+  - year: 2017
+    authors: "Rodriguez F, Kenefick AW, Arkhipova IR"
+    title: "LTR-retrotransposons from bdelloid rotifers capture additional ORFs shared between highly diverse retroelement types"
+    journal: "Viruses"
+    detail: "9(4):78"
+    doi: "10.3390/v9040078"
+    pdf: "rodriguez_2017_orf-capture-ltr.pdf"
+
+  - year: 2016
+    authors: "Rodriguez F, Arkhipova IR"
+    title: "Multitasking of the piRNA silencing machinery: targeting transposable elements and foreign genes in the bdelloid rotifer Adineta vaga"
+    journal: "Genetics"
+    detail: "203(1):255-268"
+    doi: "10.1534/genetics.116.186734"
+    pdf: "rodriguez_2016_small-rna.pdf"
+    note: "Selected for the 2016 GENETICS Spotlight"
+
+  - year: 2013
+    authors: "Flot JF, Hespeels B, Li X, Noel B, Arkhipova I, Danchin EG, Hejnol A, Henrissat B, Koszul R, Aury JM, Barbe V, Barthélémy RM, Bast J, Bazykin GA, Chabrol O, Couloux A, Da Rocha M, Da Silva C, Gladyshev E, Gouret P, Hallatschek O, Hecox-Lea B, Labadie K, Lejeune B, Piskurek O, Poulain J, Rodriguez F, Ryan JF, Vakhrusheva OA, Wajnberg E, Wirth B, Yushenova I, Kellis M, Kondrashov AS, Mark Welch DB, Pontarotti P, Weissenbach J, Wincker P, Jaillon O, Van Doninck K"
+    title: "Genomic evidence for ameiotic evolution in the bdelloid rotifer Adineta vaga"
+    journal: "Nature"
+    detail: "500:453-457"
+    doi: "10.1038/nature12326"
+    pdf: "rodriguez_2013_rotifer-avaga-genome.pdf"
+
+  - year: 2013
+    authors: "Arkhipova IR, Yushenova IA, Rodriguez F"
+    title: "Endonuclease-containing Penelope retrotransposons in the bdelloid rotifer Adineta vaga exhibit unusual structural features and play a role in expansion of host gene families"
+    journal: "Mobile DNA"
+    detail: "4:19"
+    doi: "10.1186/1759-8753-4-19"
+    pdf: "rodriguez_2013_penelope-host-genes.pdf"
+
+  - year: 2013
+    authors: "Arkhipova IR, Rodriguez F"
+    title: "Genetic and epigenetic changes involving (retro)transposons in animal hybrids and polyploids"
+    journal: "Cytogenetic and Genome Research"
+    detail: "140(2-4):295-311"
+    doi: "10.1159/000352069"
+    pdf: "rodriguez_2013_epigenetics-hybrids.pdf"
+    tag: "Review"
+
+  - year: 2010
+    authors: "Rodriguez F, Pérez T, Hammer S, Albornoz J, Domínguez A"
+    title: "Integrating phylogeographic patterns of microsatellite and mtDNA divergence to infer the evolutionary history of chamois (genus Rupicapra)"
+    journal: "BMC Evolutionary Biology"
+    detail: "10:222"
+    doi: "10.1186/1471-2148-10-222"
+    pdf: "rodriguez_2010_phylogeography-chamois.pdf"
+
+  - year: 2009
+    authors: "Rodriguez F, Hammer S, Pérez T, Suchentrunk F, Lorenzini R, Michallet J, Martinkova N, Albornoz J, Domínguez A"
+    title: "Cytochrome b phylogeography of chamois (Rupicapra spp.): population contractions, expansions and hybridizations governed the diversification of the genus"
+    journal: "Journal of Heredity"
+    detail: "100(1):47-55"
+    doi: "10.1093/jhered/esn074"
+    pdf: "rodriguez_2009_cytochromeb-phylogeography.pdf"
+
+  - year: 2007
+    authors: "Rodriguez F, Albornoz J, Domínguez A"
+    title: "Cytochrome b pseudogene originated from a highly divergent mitochondrial lineage in genus Rupicapra"
+    journal: "Journal of Heredity"
+    detail: "98(3):243-249"
+    doi: "10.1093/jhered/esm013"
+    pdf: "rodriguez_2007_cytochromeb-pseudogene.pdf"
+
+# --- Book chapters, features and other writing -----------------------------
+other:
+  - year: 2016
+    authors: "Rodriguez F, Arkhipova IR"
+    title: "Multitasking of the piRNA silencing machinery: targeting transposable elements and foreign genes in the bdelloid rotifer Adineta vaga"
+    journal: "GENETICS Spotlight 2016, Genes to Genomes"
+    url: "http://genestogenomes.org/2016-genetics-spotlight/"
+    pdf: "rodriguez_2016_genetics-spotlight-srna.pdf"
+    tag: "Feature"
+
+  - year: 2009
+    authors: "Domínguez Sanjurjo A, Rodriguez Vazquez F, Albornoz Pons J, Pérez Méndez T"
+    title: "El rebeco cantábrico, filogeografía e historia evolutiva"
+    journal: "In: Pérez-Barbería FJ, Palacios B (eds), El Rebeco Cantábrico (Rupicapra pyrenaica parva): Conservación y gestión de sus poblaciones. Colección Naturaleza y Parques Nacionales, Serie Técnica"
+    pdf: "rodriguez_2009_chamois-book-chapter.pdf"
+    tag: "Chapter"
+
+  - year: 2008
+    authors: "Rodriguez F, Hammer S, Pérez T, Suchentrunk F, Lorenzini R, Michallet J, Martinkova N, Albornoz J, Domínguez A"
+    title: "Cytochrome b phylogeography of chamois (Rupicapra spp.): population contractions, expansions and hybridizations characterize the diversification of the genus"
+    journal: "82nd Annual Meeting of the German Society of Mammalogy, Vienna. Mammalian Biology 73[Suppl. 1]:16"
+    tag: "Abstract"
+
+  - year: 2004
+    authors: "Domínguez A, Rodriguez F"
+    title: "Beef traceability based on DNA fingerprinting"
+    journal: "Feedinfo News Service"
+    tag: "Article"

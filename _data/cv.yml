@@ -1,0 +1,46 @@
+# ===========================================================================
+#  CV data. Add a new row by copying an existing one and editing it.
+#  Rows appear in the order written here.
+# ===========================================================================
+
+positions:
+  - period: "2024 – present"
+    role: "Research Scientist"
+    where: "College of Science, Rochester Institute of Technology"
+  - period: "2018 – 2024"
+    role: "Research Scientist"
+    where: "Josephine Bay Paul Center, Marine Biological Laboratory"
+  - period: "2015 – 2018"
+    role: "Research Associate"
+    where: "Josephine Bay Paul Center, Marine Biological Laboratory"
+
+education:
+  - period: "2010 – 2015"
+    role: "Postdoctoral Fellow"
+    where: "Marine Biological Laboratory"
+    note: "Advisor: Irina Arkhipova"
+  - period: "2004 – 2009"
+    role: "Ph.D., Biology (Molecular Biology and Biochemistry)"
+    where: "Universidad de Oviedo, Spain"
+    note: "Advisors: Ana Domínguez Sanjurjo and Trinidad Pérez Méndez"
+  - period: "1998 – 2002"
+    role: "B.S., Biology"
+    where: "Universidad de Oviedo, Spain"
+
+service:
+  - label: "Invited reviewer"
+    items: "BMC Biology · BMC Plant Biology · PeerJ · Molecular Biology and Evolution · Scientific Reports · Frontiers in Microbiology · Nucleic Acids Research · Mobile DNA"
+  - label: "Guest associate editor"
+    items: "Frontiers in Plant Systems and Synthetic Biology · Genes (Basel)"
+
+memberships:
+  - period: "2020 – present"
+    name: "The National Shellfisheries Association"
+  - period: "2018 – present"
+    name: "The Global Invertebrate Genomics Alliance (GIGA)"
+  - period: "2018 – present"
+    name: "The Marine Biological Laboratory (MBL) Society"
+  - period: "2015 – present"
+    name: "AAAS / Science"
+  - period: "2010 – present"
+    name: "The Genetics Society of America"

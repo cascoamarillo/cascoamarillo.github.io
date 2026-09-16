@@ -1,0 +1,24 @@
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-block">
+      <p class="foot-name">{{ site.author.name }}, {{ site.author.suffix }}</p>
+      <p class="foot-line">{{ site.author.college }} · {{ site.author.school }}</p>
+      <p class="foot-line">{{ site.author.office }} · {{ site.author.address }}</p>
+      <p class="foot-line"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+    </div>
+
+    <div class="foot-block">
+      <p class="label">Elsewhere</p>
+      <ul class="foot-links">
+        {% for p in site.profiles %}
+        <li><a href="{{ p.url }}" rel="noopener">{{ p.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="foot-block foot-meta">
+      <p class="foot-line">© {{ 'now' | date: "%Y" }} {{ site.author.name }}</p>
+      <p class="foot-line">Built with Jekyll, hosted on GitHub Pages.</p>
+    </div>
+  </div>
+</footer>

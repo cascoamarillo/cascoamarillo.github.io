@@ -1,0 +1,17 @@
+{% assign p = include.pub %}
+<li class="pub">
+  <div class="pub-year">{{ p.year }}</div>
+  <div>
+    <p class="pub-title">{{ p.title }}{% if p.tag %} <span class="tag">{{ p.tag }}</span>{% endif %}</p>
+    <p class="pub-authors">{{ p.authors | replace: 'Rodriguez F', '<strong>Rodriguez F</strong>' | replace: 'Rodriguez Vazquez F', '<strong>Rodriguez Vazquez F</strong>' }}</p>
+    {% if p.journal %}<p class="pub-venue"><em>{{ p.journal }}</em>{% if p.detail %} {{ p.detail }}{% endif %}</p>{% endif %}
+    {% if p.note %}<p class="pub-note">{{ p.note }}</p>{% endif %}
+    {% if p.doi or p.url or p.pdf %}
+    <p class="pub-links">
+      {% if p.doi %}<a class="doi" href="https://doi.org/{{ p.doi }}" rel="noopener">doi:{{ p.doi }}</a>{% endif %}
+      {% if p.pdf %}<a class="doi pdf-link" href="{{ '/assets/pdfs/' | append: p.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+      {% if p.url %}<a class="doi" href="{{ p.url }}" rel="noopener">link ↗</a>{% endif %}
+    </p>
+    {% endif %}
+  </div>
+</li>

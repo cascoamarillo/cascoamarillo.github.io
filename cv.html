@@ -1,0 +1,116 @@
+---
+layout: default
+title: CV
+permalink: /cv/
+description: "Curriculum vitae: appointments, education, teaching, mentoring, service and memberships."
+---
+
+<section class="page-head">
+  <div class="wrap">
+    <h1>Curriculum vitae</h1>
+    <p>{{ site.author.name }}, {{ site.author.suffix }}. {{ site.author.role }}, {{ site.author.school }}, {{ site.author.university }}.</p>
+    <div class="btn-row">
+      {% if site.author.cv_pdf %}
+      <a class="btn btn-primary" href="{{ site.author.cv_pdf | relative_url }}">Download PDF</a>
+      {% endif %}
+      <a class="btn" href="{{ '/publications/' | relative_url }}">Publications</a>
+      <a class="btn" href="mailto:{{ site.author.email }}">Email</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="label">Appointments</p>
+    <ul class="rows">
+      {% for r in site.data.cv.positions %}
+      <li class="row">
+        <div class="row-period">{{ r.period }}</div>
+        <div>
+          <div class="row-title">{{ r.role }}</div>
+          <div class="row-sub">{{ r.where }}</div>
+          {% if r.note %}<div class="row-note">{{ r.note }}</div>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="label">Education and training</p>
+    <ul class="rows">
+      {% for r in site.data.cv.education %}
+      <li class="row">
+        <div class="row-period">{{ r.period }}</div>
+        <div>
+          <div class="row-title">{{ r.role }}</div>
+          <div class="row-sub">{{ r.where }}</div>
+          {% if r.note %}<div class="row-note">{{ r.note }}</div>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="label">Teaching</p>
+    <ul class="rows">
+      {% for c in site.data.teaching.current %}
+      <li class="row">
+        <div class="row-period">{{ c.code }}</div>
+        <div>
+          <div class="row-title">{{ c.name }}</div>
+          <div class="row-note">{{ c.credits }}{% if c.level %} · {{ c.level }}{% endif %}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="btn-row">
+      <a class="btn" href="{{ '/teaching/' | relative_url }}">Teaching record and invited lectures</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="label">Research mentoring</p>
+    <p class="section-lede">
+      {{ site.data.students.undergraduate | size }} undergraduate and
+      {{ site.data.students.graduate | size }} graduate research placements since 2010,
+      several of whose projects contributed to peer-reviewed papers.
+    </p>
+    <div class="btn-row">
+      <a class="btn" href="{{ '/students/' | relative_url }}">Full list of students</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="label">Professional service</p>
+    {% for s in site.data.cv.service %}
+    <div class="service-block">
+      <p class="row-title">{{ s.label }}</p>
+      <p class="service-items">{{ s.items }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="label">Memberships</p>
+    <ul class="rows">
+      {% for r in site.data.cv.memberships %}
+      <li class="row">
+        <div class="row-period">{{ r.period }}</div>
+        <div><div class="row-sub">{{ r.name }}</div></div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

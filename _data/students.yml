@@ -1,0 +1,149 @@
+# ===========================================================================
+#  STUDENTS: research mentoring
+#  ---------------------------------------------------------------------------
+#  One entry per student, newest first. To add someone, copy a block:
+#
+#    - year: "2027"
+#      name: "Jane Doe"
+#      affiliation: "Rochester Institute of Technology"
+#      project: "What they worked on."
+#      publication:                       # optional; delete if none
+#        label: "Doe, Rodriguez et al., 2027"
+#        doi: "10.1234/abcd.5678"         # omit doi for work in progress
+#
+#  An entry WITH a doi renders as a clickable green link to the paper.
+#  An entry WITHOUT one renders as a muted dashed marker (for "in preparation").
+#  The student counts on this page and on the CV page update themselves.
+# ===========================================================================
+
+undergraduate:
+  - year: "2025"
+    name: "Rachel Kulp"
+    affiliation: "Rochester Institute of Technology"
+    project: "Microbial metagenome analysis in soil crust."
+    publication:
+      label: "Peredo, Kulp, Rodriguez et al., 2026"
+      doi: "10.1128/mra.00380-26"
+
+  - year: "2024"
+    name: "Francesca Molee"
+    affiliation: "Rochester Institute of Technology"
+    project: "Stress response in algae from retention and non-retention sites."
+
+  - year: "2022"
+    name: "Daniel Pugatch"
+    affiliation: "University of Massachusetts"
+    project: "Development of optimal conditions to produce soluble recombinant proteins from aquatic animals for functional assays."
+
+  - year: "2021"
+    name: "Ahmad Alkhatin"
+    affiliation: "Brown University"
+    project: "Identification of rotifer repeat elements in metagenomes."
+
+  - year: "2021"
+    name: "Anton Tarazi"
+    affiliation: "Brown University"
+    project: "Identification of rotifer genome components in permafrost."
+
+  - year: "2020"
+    name: "Bridget Beaudoin"
+    affiliation: "University of Massachusetts"
+    project: "Identification of rotifer genome components in metagenomes."
+
+  - year: "2020"
+    name: "Matthew Dunn"
+    affiliation: "University of Massachusetts"
+    project: "Transposon analysis in Darwinula stevensoni."
+    publication:
+      label: "Rodriguez et al., 2021"
+      doi: "10.3390/genes12030401"
+
+  - year: "2019"
+    name: "Samuel Maffa"
+    affiliation: "Brown University"
+    project: "Function of reverse transcriptase-related (rvt) genes in metal stress response."
+
+  - year: "2018"
+    name: "Bria Metzger"
+    affiliation: "Brown University"
+    project: "Role of reverse transcriptase-related (rvt) genes in metal stress response."
+    publication:
+      label: "Yushenova, Rodriguez et al., in preparation"
+
+  - year: "2017"
+    name: "Jonathan N. Dow"
+    affiliation: "Brown University"
+    project: "Mini-Mu vector design and in vitro cloning of circular bdelloid rotifer transposition intermediates."
+
+  - year: "2017"
+    name: "Brandon M. Le"
+    affiliation: "Brown University"
+    project: "Annotation of repeat regions in the miniature parasitoid wasp Megaphragma amalphitanum."
+    publication:
+      label: "Sharko et al., 2019"
+      doi: "10.1371/journal.pone.0226485"
+
+  - year: "2017"
+    name: "Katherine Dunham"
+    affiliation: "Brown University"
+    project: "Purification of reverse transcriptase-related (rvt) gene in Neurospora crassa."
+
+  - year: "2017"
+    name: "Laura Swain"
+    affiliation: "University of Chicago"
+    project: "Identifying extrachromosomal intermediates of transposition in bdelloid rotifers."
+
+  - year: "2016"
+    name: "Samantha Spear"
+    affiliation: "Brown University"
+    project: "Neurospora mutagenesis and selection of rvt-gene related pathways."
+
+  - year: "2016"
+    name: "Brandon M. Le"
+    affiliation: "Brown University"
+    project: "Genome transposon analysis benchmarking."
+
+  - year: "2016"
+    name: "Vishok Srikanth"
+    affiliation: "University of Chicago"
+    project: "Domain structure of reverse transcriptase-related proteins."
+
+  - year: "2015"
+    name: "Tatsiana Mello"
+    affiliation: "Wellesley College"
+    project: "In vitro activity of reverse transcriptase-related (rvt) genes."
+
+  - year: "2014"
+    name: "Aubrey W. Kenefick"
+    affiliation: "Williams College"
+    project: "Analysis of LTR-retrotransposons in bdelloid rotifers."
+    publication:
+      label: "Rodriguez et al., 2017"
+      doi: "10.3390/v9040078"
+
+  - year: "2013"
+    name: "Daniel DiCorpo"
+    affiliation: "Brown University"
+    project: "Detection of methylated DNA in bdelloid rotifers."
+    publication:
+      label: "Rodriguez et al., 2022"
+      doi: "10.1038/s41467-022-28471-w"
+
+graduate:
+  - year: "2024 –"
+    name: "Andrew Alford"
+    affiliation: "Rochester Institute of Technology"
+    degree: "M.Sc. thesis"
+    project: "DNA methylation variation and demethylation effects in rotifers."
+
+  - year: "2024 –"
+    name: "Yelle Vandenboer"
+    affiliation: "Institute of Natural Sciences, Brussels, Belgium"
+    degree: "Ph.D. thesis"
+    project: "Transposons in ostracod evolution."
+
+  - year: "2010 – 2012"
+    name: "Anupriya Dutta"
+    affiliation: "Brown University"
+    degree: "Ph.D. thesis"
+    project: "Purification and analysis of small RNAs in bdelloid rotifers."

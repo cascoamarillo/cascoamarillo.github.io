@@ -1,0 +1,96 @@
+---
+layout: default
+title: Teaching
+permalink: /teaching/
+description: Courses taught by Fernando Rodriguez, Ph.D., Adjunct Faculty in the Thomas H. Gosnell School of Life Sciences, RIT.
+---
+
+<section class="page-head">
+  <div class="wrap">
+    <h1>Teaching</h1>
+    <p>
+      I teach across organismal biology and bioinformatics, connecting molecular
+      and computational techniques with hands-on, project-based work. Current
+      courses run from introductory laboratory science to graduate
+      bioinformatics and thesis research.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="pub-toolbar">
+      <p class="label" style="margin:0">Currently teaching</p>
+      <p class="pub-count">{{ site.data.teaching.current | size }} courses</p>
+    </div>
+
+    <ol class="course-list">
+      {% for c in site.data.teaching.current %}
+      <li class="course">
+        <div class="course-code">{{ c.code }}</div>
+        <div>
+          <p class="course-name">{{ c.name }}{% if c.level %} <span class="tag">{{ c.level }}</span>{% endif %}</p>
+          <p class="course-credits">{{ c.credits }}</p>
+          <p class="course-desc">{{ c.description }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="label">Teaching record</p>
+    <ul class="rows">
+      {% for r in site.data.teaching.record %}
+      <li class="row">
+        <div class="row-period">{{ r.year }}</div>
+        <div><div class="row-sub">{{ r.text }}</div></div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="label">Invited lectures and seminars</p>
+    <ul class="rows">
+      {% for r in site.data.teaching.lectures %}
+      <li class="row">
+        <div class="row-period">{{ r.year }}</div>
+        <div><div class="row-sub">{{ r.text }}</div></div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="label">Teaching qualifications</p>
+    <ul class="rows">
+      {% for r in site.data.teaching.qualifications %}
+      <li class="row">
+        <div class="row-period">{{ r.year }}</div>
+        <div><div class="row-sub">{{ r.text }}</div></div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="label">Research mentoring</p>
+    <p class="section-lede">
+      Beyond the classroom, I have mentored graduate, undergraduate, and
+      high-school researchers from Brown University, Williams College, Wellesley
+      College, the University of Chicago, the University of Massachusetts, and
+      others. See the
+      <a href="{{ site.author.cv_pdf | default: '/cv/' | relative_url }}">CV</a>
+      for the full list.
+    </p>
+  </div>
+</section>

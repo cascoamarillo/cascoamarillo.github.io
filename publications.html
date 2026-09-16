@@ -1,0 +1,47 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+description: Peer-reviewed articles, reviews, book chapters and other writing by Fernando Rodriguez.
+---
+
+<section class="page-head">
+  <div class="wrap">
+    <h1>Publications</h1>
+    <p>
+      Peer-reviewed articles first, then reviews, chapters and other writing.
+      Each entry links to its DOI where one exists, and to a PDF of the full
+      text where I can host one.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="pub-toolbar">
+      <p class="label" style="margin:0">Peer-reviewed articles</p>
+      <p class="pub-count">{{ site.data.publications.articles | size }} entries</p>
+    </div>
+
+    <ol class="pub-list">
+      {% for pub in site.data.publications.articles %}
+        {% include pub.html pub=pub %}
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="pub-toolbar">
+      <p class="label" style="margin:0">Chapters, features and other writing</p>
+      <p class="pub-count">{{ site.data.publications.other | size }} entries</p>
+    </div>
+
+    <ol class="pub-list">
+      {% for pub in site.data.publications.other %}
+        {% include pub.html pub=pub %}
+      {% endfor %}
+    </ol>
+  </div>
+</section>

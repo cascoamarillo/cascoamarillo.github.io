@@ -1,0 +1,136 @@
+---
+layout: default
+title: About
+permalink: /
+---
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>{{ site.author.name }}</h1>
+      <p class="hero-role">{{ site.author.role }} · {{ site.author.school }}</p>
+
+      <p class="hero-lede">
+        I am a molecular biologist. My work sits at the junction of molecular
+        evolution, comparative genomics and epigenetics, in the field of gene
+        silencing and activation in metazoans.
+      </p>
+      <p>
+        The question I keep returning to is how eukaryotic cells recognize and
+        repress foreign genetic material: transposable elements, and genes
+        picked up from bacteria by horizontal gene transfer. I am equally
+        interested in what happens when a piece of that foreign machinery is
+        turned into a tool of the host's own genome defense.
+      </p>
+      <p>
+        Much of that work has been done in bdelloid rotifers, microscopic
+        freshwater invertebrates with transposon-poor genomes unusually rich in
+        genes of bacterial origin, alongside comparative work in other
+        invertebrates and in the chamois genus <em>Rupicapra</em>.
+      </p>
+
+      <div class="btn-row">
+        <a class="btn btn-primary" href="{{ '/research/' | relative_url }}">Research</a>
+        <a class="btn" href="{{ '/publications/' | relative_url }}">Publications</a>
+        <a class="btn" href="mailto:{{ site.author.email }}">Email me</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="portrait">
+        <img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.photo_alt }}" width="600" height="600">
+      </div>
+
+      <dl class="hero-facts">
+        <div class="fact"><dt>Position</dt><dd>{{ site.author.role }}</dd></div>
+        <div class="fact"><dt>Unit</dt><dd>{{ site.author.school }}, {{ site.author.college }}</dd></div>
+        <div class="fact"><dt>Office</dt><dd>{{ site.author.office }}<br>{{ site.author.address }}</dd></div>
+        <div class="fact"><dt>Email</dt><dd><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="label">Keywords</p>
+    <ul class="chips">
+      <li>Epigenetics</li>
+      <li>Gene silencing</li>
+      <li>Transposable elements</li>
+      <li>Horizontal gene transfer</li>
+      <li>DNA methylation</li>
+      <li>Histone modification</li>
+      <li>Non-coding RNA</li>
+      <li>piRNA pathways</li>
+      <li>Retroelements</li>
+      <li>Comparative genomics</li>
+      <li>Molecular evolution</li>
+      <li>Bdelloid rotifers</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="label">Current lines of work</p>
+    <div class="cards">
+      <article class="card">
+        <span class="card-num">01</span>
+        <h3>Horizontal gene transfer as evolutionary innovation</h3>
+        <p>What foreign genes do once they arrive in an animal genome, including a bacterial methyltransferase that became part of the host's silencing machinery.</p>
+      </article>
+      <article class="card">
+        <span class="card-num">02</span>
+        <h3>Reverse-transcriptase-related genes</h3>
+        <p>Penelope-like retroelements, permuted domain architectures, and giant retroelements that sit at chromosome ends.</p>
+      </article>
+      <article class="card">
+        <span class="card-num">03</span>
+        <h3>Mobile elements in sexual and asexual taxa</h3>
+        <p>How transposon landscapes and the silencing pathways that contain them differ in lineages that have gone without sex for a very long time.</p>
+      </article>
+    </div>
+    <div class="btn-row">
+      <a class="btn" href="{{ '/research/' | relative_url }}">All research themes</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="label">Recent publications</p>
+    <ol class="pub-list">
+      {% for pub in site.data.publications.articles limit: 5 %}
+        {% include pub.html pub=pub %}
+      {% endfor %}
+    </ol>
+    <div class="btn-row">
+      <a class="btn" href="{{ '/publications/' | relative_url }}">Full publication list</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="label">Contact</p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <p class="label">Email</p>
+        <p><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+      </div>
+      <div class="contact-item">
+        <p class="label">Phone</p>
+        <p>{{ site.author.phone }}</p>
+      </div>
+      <div class="contact-item">
+        <p class="label">Office</p>
+        <p>{{ site.author.office }}<br>{{ site.author.address }}</p>
+      </div>
+      <div class="contact-item">
+        <p class="label">Department</p>
+        <p>{{ site.author.school }}<br>{{ site.author.college }}, {{ site.author.university_short }}</p>
+      </div>
+    </div>
+  </div>
+</section>

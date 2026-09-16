@@ -1,0 +1,62 @@
+---
+layout: default
+title: Students
+permalink: /students/
+description: Undergraduate and graduate students mentored by Fernando Rodriguez, with links to the peer-reviewed papers their work contributed to.
+---
+
+<section class="page-head">
+  <div class="wrap">
+    <h1>Students</h1>
+    <p>
+      Undergraduate and graduate researchers I have mentored, newest first.
+      Where a project contributed to a peer-reviewed paper, the citation is
+      marked and links straight to the published article.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="pub-toolbar">
+      <p class="label" style="margin:0">Undergraduate research mentoring</p>
+      <p class="pub-count">{{ site.data.students.undergraduate | size }} entries</p>
+    </div>
+
+    <ol class="pub-list">
+      {% for s in site.data.students.undergraduate %}
+        {% include student.html student=s %}
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="pub-toolbar">
+      <p class="label" style="margin:0">Graduate research mentoring</p>
+      <p class="pub-count">{{ site.data.students.graduate | size }} entries</p>
+    </div>
+
+    <ol class="pub-list">
+      {% for s in site.data.students.graduate %}
+        {% include student.html student=s %}
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="label">Interested in joining?</p>
+    <p class="section-lede">
+      I take undergraduate and graduate students working on genome evolution,
+      transposable elements, and computational approaches to comparative
+      genomics. Email me with a short note about what interests you.
+    </p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+      <a class="btn" href="{{ '/publications/' | relative_url }}">Publications</a>
+    </div>
+  </div>
+</section>

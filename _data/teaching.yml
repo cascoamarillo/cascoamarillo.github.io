@@ -1,0 +1,82 @@
+# ===========================================================================
+#  TEACHING
+#  ---------------------------------------------------------------------------
+#  `current`:        courses on your RIT directory page right now
+#  `record`:         year-by-year record of courses taught
+#  `lectures`:       invited lectures, seminars and talks
+#  `qualifications`: teaching training and certifications
+#
+#  To add a current course:
+#    - code: "BIOL-999"
+#      name: "Course Title"
+#      credits: "3 credits"
+#      level: "Graduate"          # optional small tag
+#      description: "What the course covers."
+# ===========================================================================
+
+current:
+  - code: "BIOL-125"
+    name: "Introduction to Biology Laboratory: Organisms and Ecosystems"
+    credits: "1 credit"
+    level: "Undergraduate"
+    description: "An introduction to laboratory work in the life sciences. Project-based, with field work as well as laboratory experiments, designed to show the scope of biology and how molecular biology and bioinformatics techniques connect with organismal and ecological biology."
+
+  - code: "BIOL-216"
+    name: "Molecular Biology Laboratory"
+    credits: "1 credit"
+    level: "Undergraduate"
+    description: "The fundamental concepts of molecular biology, approached through the bench. Students complement their understanding of core concepts by implementing and practicing the laboratory techniques molecular biologists actually use."
+
+  - code: "BIOL-530 / 630"
+    name: "Bioinformatics Algorithms"
+    credits: "3 credits"
+    level: "Undergraduate and graduate"
+    description: "The analyses, tools and databases commonly used in bioinformatics. Labs apply the lecture material to the analysis of real data through computer programming."
+
+  - code: "ENVS-790"
+    name: "Environmental Science Thesis"
+    credits: "1–4 credits"
+    level: "Graduate"
+    description: "Faculty-mentored thesis research for environmental science graduate students, from proposal through written thesis and oral defense."
+
+  - code: "ENVS-791"
+    name: "Continuation of Thesis"
+    credits: "1 credit"
+    level: "Graduate"
+    description: "Continuation of ongoing thesis research."
+
+  - code: "ENVS-795"
+    name: "Environmental Science Graduate Research"
+    credits: "1–4 credits"
+    level: "Graduate"
+    description: "Faculty-directed research of an original nature, involving laboratory or field work, computer modeling, or theoretical calculations."
+
+record:
+  - year: "2026"
+    text: "Bioinformatics Algorithms (BIOL-530/630), 3 credits · Rochester Institute of Technology"
+  - year: "2025"
+    text: "Introduction to Biology Laboratory: Organisms and Ecosystems (BIOL-125), 1 credit · Rochester Institute of Technology"
+  - year: "2025"
+    text: "Bioinformatics Algorithms (BIOL-530/630), 3 credits · Rochester Institute of Technology"
+  - year: "2024"
+    text: "Bioinformatics Algorithms (BIOL-530/630), 3 credits · Rochester Institute of Technology"
+  - year: "2008"
+    text: "Lecturer (invited speaker), M.Sc. courses · Universidad de Oviedo, Spain"
+  - year: "2005"
+    text: "Lecturer, Biotechnology Applied to Plant Breeding and Conservation, and Conservation and Genetic Characterization of Plant Resources · Universidad de Oviedo, Spain"
+
+lectures:
+  - year: "2025"
+    text: "Invited speaker, Bioinformatics Club · Rochester Institute of Technology"
+  - year: "2025"
+    text: "Invited lecturer, Computational Methods in Molecular Biology (BIOL-206) · Rochester Institute of Technology"
+  - year: "2024"
+    text: "Invited lecturer, Computational Methods in Molecular Biology (BIOL-206) · Rochester Institute of Technology"
+  - year: "2024"
+    text: "Georgia Gosnell Seminar speaker · Rochester Institute of Technology"
+
+qualifications:
+  - year: "2024"
+    text: "Inclusive Practices Cohort, College of Science · Rochester Institute of Technology"
+  - year: "2004"
+    text: "Master in Education (250 h): pedagogical training for secondary and upper secondary education, vocational training and languages (Certificate of Pedagogical Aptitude) · Universidad de Oviedo, Spain"
