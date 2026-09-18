@@ -234,7 +234,7 @@ _config.yml           site-wide settings
 _data/                publications, students, teaching, CV (the content you edit most)
 _includes/            head, nav, footer, single publication entry
 _layouts/default.html page shell
-assets/css/style.css  all styling; colors are variables at the top
+assets/css/site.css   all styling; colors are variables at the top
 assets/js/site.js     mobile menu, nothing else
 index.html            About
 research.html         Research

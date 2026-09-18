@@ -103,9 +103,17 @@ templates, not finished pages. Jekyll assembles them.
 
 ## When something goes wrong
 
-**The live site looks like plain unstyled text.**
-A `.nojekyll` file got into the repo. That tells GitHub not to run Jekyll.
-Delete it and push.
+**The site looks plain and generic — wrong fonts, blue links, no layout.**
+Something else is winning the stylesheet. Two known causes:
+
+1. A `.nojekyll` file got into the repo. That tells GitHub not to run Jekyll
+   at all. Delete it and push.
+2. The stylesheet was renamed back to `assets/css/style.css`. Don't — the
+   `github-pages` gem quietly defaults to the Primer theme, and Primer ships
+   its own `assets/css/style.scss` that compiles to that exact path and
+   overrides yours. That's why this site's CSS is called **`site.css`**. If
+   you ever rename it, pick a name no theme uses, and update the `<link>` in
+   `_includes/head.html` to match.
 
 **GitHub says the build failed.**
 Almost always YAML. In `_data/*.yml`, any value containing a colon-space must
@@ -139,7 +147,7 @@ _config.yml           name, email, office, links, nav, Resources menu
 _data/                publications, students, teaching, cv  ← most edits here
 _includes/            header, footer, and the small repeated bits
 _layouts/default.html the page shell
-assets/css/style.css  all styling; the colors are variables at the top
+assets/css/site.css   all styling; the colors are variables at the top
 assets/pdfs/          paper PDFs
 assets/cv.pdf         your CV
 *.html                one file per page
