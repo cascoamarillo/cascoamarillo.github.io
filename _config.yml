@@ -95,5 +95,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - UPDATING.md      # notes for me, not pages. Excluding them also stops
+  - publish.sh       # Jekyll choking on the Liquid examples they contain.
   - vendor
   - .github
