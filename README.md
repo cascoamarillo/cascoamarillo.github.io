@@ -1,8 +1,7 @@
 # rodriguezf.org
 
-Personal academic site for Fernando Rodriguez, Ph.D. Built with
-[Jekyll](https://jekyllrb.com/) and hosted free on GitHub Pages. No build step
-to run yourself; GitHub rebuilds the site every time you push.
+Personal site for Fernando Rodriguez. Built with
+[Jekyll](https://jekyllrb.com/) and hosted on GitHub Pages. GitHub rebuilds the site every time you push.
 
 ---
 

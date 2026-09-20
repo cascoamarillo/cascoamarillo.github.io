@@ -140,6 +140,56 @@ git push
 
 ---
 
+## Editing comfortably (VS Code)
+
+Free from code.visualstudio.com, or `brew install --cask visual-studio-code`.
+
+**Open the project, not a file:** File -> Open Folder -> `~/Claude/Projects/Website/site`.
+You get a file tree on the left, so you can click between `_data/publications.yml`
+and the pages instead of hunting through Finder.
+
+**Three extensions worth having** (the squares icon in the left bar, then search):
+
+| Extension | Why |
+|---|---|
+| **YAML** (Red Hat) | Colours and validates `_data/*.yml`, and underlines the unquoted-colon mistake in red *before* you push a broken build |
+| **Liquid** (search "Liquid", either the Shopify or Neil Ding one) | Makes `{% ... %}` and `{{ ... }}` readable in the .html files instead of a grey wall |
+| **Rainbow CSV** (optional) | Handy if you ever keep data as CSV |
+
+**Live preview while you edit.** Open the built-in terminal with `Ctrl` + `` ` ``
+(backtick), then run once:
+
+```bash
+bundle exec jekyll serve
+```
+
+Leave it running, open http://localhost:4000, and put the browser beside VS Code.
+Every time you save a file Jekyll rebuilds in a second or two; refresh to see it.
+Stop it with `Ctrl-C`.
+
+**Committing without the terminal.** The Source Control icon in the left bar (the
+branch symbol) lists everything you changed. Type a message in the box, click the
+tick to commit, then the `...` menu -> Push. That replaces `./publish.sh` entirely
+if you prefer buttons.
+
+**What you'll actually open, by task:**
+
+| To change | Open |
+|---|---|
+| Add a paper | `_data/publications.yml` |
+| Add a student | `_data/students.yml` |
+| Add/change a course | `_data/teaching.yml` |
+| Jobs, degrees, service | `_data/cv.yml` |
+| Name, email, ORCID, menu | `_config.yml` |
+| Wording on the About page | `index.html` (edit the text *between* the tags) |
+| Research descriptions | `research.html` |
+| Colours, fonts, spacing | `assets/css/site.css` (the variables at the very top) |
+
+In the `.html` files, only touch the plain sentences. Leave anything inside
+`{{ }}` or `{% %}` alone - that's Jekyll filling in values for you.
+
+---
+
 ## Where things live
 
 ```
