@@ -9,5 +9,10 @@
   </main>
   {% include footer.html %}
   <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+  {% assign gc = site.goatcounter | default: "" | strip %}
+  {% if gc.size > 0 %}
+  <script data-goatcounter="https://{{ gc }}.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+  {% endif %}
 </body>
 </html>
