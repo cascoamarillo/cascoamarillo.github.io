@@ -27,11 +27,22 @@ education:
     role: "B.S., Biology"
     where: "Universidad de Oviedo, Spain"
 
+# Professional service. Each block has a `label` and `items`.
+# Optional: `url` + `url_label` add a link under the items.
 service:
-  - label: "Invited reviewer"
-    items: "BMC Biology · BMC Plant Biology · PeerJ · Molecular Biology and Evolution · Scientific Reports · Frontiers in Microbiology · Nucleic Acids Research · Mobile DNA"
-  - label: "Guest associate editor"
-    items: "Frontiers in Plant Systems and Synthetic Biology · Genes (Basel)"
+  - label: "Invited reviewer for"
+    items: "BMC Biology · BMC Genomics · BMC Plant Biology · PeerJ · Molecular Biology and Evolution · Scientific Reports · Frontiers in Microbiology · Nucleic Acid Research · Mobile DNA · Hydrobiologia"
+
+  - label: "Invited guest associate editor for"
+    items: "Frontiers in Plant Systems and Synthetic Biology (Research topic: Mobile Elements and Plant Genome Evolution, Comparative Analyses and Computational Tools) · Genes (Basel)"
+
+  - label: "Editorial board member"
+    items: "Microbiology Resource Announcements"
+    url: "https://journals.asm.org/journal/mra/board-editors"
+    url_label: "Editorial board"
+
+  - label: "NSF panelist"
+    items: "2025"
 
 memberships:
   - period: "2020 – present"

@@ -1,0 +1,33 @@
+# ===========================================================================
+#  IN THE NEWS
+#  Press coverage and features. Newest first. To add one, copy a block:
+#
+#    - source: "Publication name"
+#      year: "2027"            # optional
+#      title: "Headline as published"
+#      url: "https://..."
+# ===========================================================================
+
+items:
+  - source: "University of Oxford"
+    year: "2024"
+    title: "New study shows tiny animals steal antibiotic recipes from bacteria"
+    url: "https://www.ox.ac.uk/news/2024-07-19-new-study-shows-tiny-animals-steal-antibiotic-recipes-bacteria"
+
+  - source: "Marine Biological Laboratory"
+    year: "2024"
+    title: "Small animals acquire genes from bacteria that can produce antibiotics"
+    url: "https://www.mbl.edu/news/small-animals-acquire-genes-bacteria-can-produce-antibiotics"
+
+  - source: "The Scientist"
+    title: "Bacterial enzyme keeps rotifers' transposable elements in check"
+    url: "https://www.the-scientist.com/news-opinion/bacterial-enzyme-keeps-rotifers-transposable-elements-in-check-69766"
+
+  - source: "EurekAlert!"
+    title: "Newly discovered DNA element at telomeres: Terminons"
+    url: "https://www.eurekalert.org/pub_releases/2017-06/mbl-ndd060517.php"
+
+  - source: "Genes to Genomes"
+    year: "2016"
+    title: "2016 GENETICS Spotlight"
+    url: "http://genestogenomes.org/2016-genetics-spotlight/"

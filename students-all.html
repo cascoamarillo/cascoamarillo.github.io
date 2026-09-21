@@ -1,0 +1,49 @@
+---
+layout: default
+title: All students
+permalink: /students/all/
+description: Complete list of undergraduate and graduate students mentored by Fernando Rodriguez.
+sitemap: false
+---
+
+<section class="page-head">
+  <div class="wrap">
+    <h1>All students</h1>
+    <p>
+      Every undergraduate and graduate researcher I have mentored, newest first.
+      Where a project contributed to a peer-reviewed paper, the citation links
+      to the published article.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="label">Undergraduate research mentoring</p>
+    <ol class="pub-list">
+      {% for s in site.data.students.undergraduate %}
+        {% include student.html student=s %}
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="label">Graduate research mentoring</p>
+    <ol class="pub-list">
+      {% for s in site.data.students.graduate %}
+        {% include student.html student=s %}
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="btn-row">
+      <a class="btn" href="{{ '/students/' | relative_url }}">Students currently in the group</a>
+      <a class="btn" href="{{ '/cv/' | relative_url }}">Back to CV</a>
+    </div>
+  </div>
+</section>

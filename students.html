@@ -2,47 +2,40 @@
 layout: default
 title: Students
 permalink: /students/
-description: Undergraduate and graduate students mentored by Fernando Rodriguez, with links to the peer-reviewed papers their work contributed to.
+description: Students currently working with Fernando Rodriguez.
 ---
 
 <section class="page-head">
   <div class="wrap">
     <h1>Students</h1>
-    <p>
-      Undergraduate and graduate researchers I have mentored, newest first.
-      Where a project contributed to a peer-reviewed paper, the citation is
-      marked and links straight to the published article.
-    </p>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
-    <div class="pub-toolbar">
-      <p class="label" style="margin:0">Undergraduate research mentoring</p>
-      <p class="pub-count">{{ site.data.students.undergraduate | size }} entries</p>
-    </div>
+    <p class="label">Currently in the group</p>
 
-    <ol class="pub-list">
-      {% for s in site.data.students.undergraduate %}
-        {% include student.html student=s %}
-      {% endfor %}
-    </ol>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="pub-toolbar">
-      <p class="label" style="margin:0">Graduate research mentoring</p>
-      <p class="pub-count">{{ site.data.students.graduate | size }} entries</p>
-    </div>
-
-    <ol class="pub-list">
-      {% for s in site.data.students.graduate %}
-        {% include student.html student=s %}
-      {% endfor %}
-    </ol>
+    {% for s in site.data.students.graduate %}
+      {% if s.featured %}
+      <article class="student-card">
+        <div class="student-photo">
+          <img src="{{ '/assets/img/students/' | append: s.photo | default: '/assets/img/students/placeholder.svg' | relative_url }}"
+               alt="{{ s.name }}" loading="lazy">
+        </div>
+        <div>
+          <p class="student-name">{{ s.name }}{% if s.degree %} <span class="tag">{{ s.degree }}</span>{% endif %}</p>
+          <p class="student-affil">{{ s.year }} · {{ s.affiliation }}</p>
+          <p class="student-project">{{ s.project }}</p>
+          {% if s.interests %}<p class="student-interests">{{ s.interests }}</p>{% endif %}
+          {% if s.link %}
+          <p class="student-pub">
+            <a class="paper" href="{{ s.link }}" target="_blank" rel="noopener"><span class="paper-mark" aria-hidden="true">↗</span>{{ s.link_label }}</a>
+          </p>
+          {% endif %}
+        </div>
+      </article>
+      {% endif %}
+    {% endfor %}
   </div>
 </section>
 

@@ -8,11 +8,12 @@ description: "Curriculum vitae: appointments, education, teaching, mentoring, se
 <section class="page-head">
   <div class="wrap">
     <h1>Curriculum vitae</h1>
-    <p>{{ site.author.name }}, {{ site.author.suffix }}. {{ site.author.role }}, {{ site.author.school }}, {{ site.author.university }}.</p>
+    <p>{{ site.author.name }}, {{ site.author.suffix }} {{ site.author.role }}, {{ site.author.school }}, {{ site.author.university }}.</p>
     <div class="btn-row">
       {% if site.author.cv_pdf %}
       <a class="btn btn-primary" href="{{ site.author.cv_pdf | relative_url }}">Download PDF</a>
       {% endif %}
+      <a class="btn" href="https://orcid.org/0000-0003-4044-8734" target="_blank" rel="noopener">ORCID</a>
       <a class="btn" href="{{ '/publications/' | relative_url }}">Publications</a>
       <a class="btn" href="mailto:{{ site.author.email }}">Email</a>
     </div>
@@ -70,7 +71,7 @@ description: "Curriculum vitae: appointments, education, teaching, mentoring, se
       {% endfor %}
     </ul>
     <div class="btn-row">
-      <a class="btn" href="{{ '/teaching/' | relative_url }}">Teaching record and invited lectures</a>
+      <a class="btn" href="{{ '/teaching/' | relative_url }}">Courses and invited lectures</a>
     </div>
   </div>
 </section>
@@ -84,7 +85,7 @@ description: "Curriculum vitae: appointments, education, teaching, mentoring, se
       several of whose projects contributed to peer-reviewed papers.
     </p>
     <div class="btn-row">
-      <a class="btn" href="{{ '/students/' | relative_url }}">Full list of students</a>
+      <a class="btn" href="{{ '/students/all/' | relative_url }}">Full list of students</a>
     </div>
   </div>
 </section>
@@ -96,6 +97,11 @@ description: "Curriculum vitae: appointments, education, teaching, mentoring, se
     <div class="service-block">
       <p class="row-title">{{ s.label }}</p>
       <p class="service-items">{{ s.items }}</p>
+      {% if s.url %}
+      <p class="service-link">
+        <a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.url_label | default: 'Link' }} ↗</a>
+      </p>
+      {% endif %}
     </div>
     {% endfor %}
   </div>

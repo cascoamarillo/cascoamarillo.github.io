@@ -130,11 +130,21 @@ undergraduate:
       doi: "10.1038/s41467-022-28471-w"
 
 graduate:
+  # `featured: true` puts a student on the Students page with a photo card.
+  # Everyone else appears only on the full list at /students/all/.
   - year: "2024 –"
     name: "Andrew Alford"
     affiliation: "Rochester Institute of Technology"
     degree: "M.Sc. thesis"
     project: "DNA methylation variation and demethylation effects in rotifers."
+    featured: true
+    photo: "placeholder.svg"       # swap for andrew-alford.jpg once you add it to assets/img/students/
+    interests: "Andrew's project asks how DNA methylation varies across bdelloid
+      rotifer lineages, and what happens to transposon control when that
+      methylation is chemically removed. He is interested in epigenetic
+      inheritance and in computational approaches to comparative genomics."
+    link: ""                        # optional: personal page, LinkedIn, GitHub...
+    link_label: "Personal page"
 
   - year: "2024 –"
     name: "Yelle Vandenboer"

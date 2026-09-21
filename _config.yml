@@ -19,6 +19,10 @@ author:
   name: Fernando Rodriguez
   suffix: Ph.D.
   role: Research Scientist
+  # Shown top-left and as the subtitle. Deliberately not a job title.
+  title: "Molecular - Computational Biologist"
+  bluesky: "@cascoamarillo.bsky.social"
+  bluesky_url: "https://bsky.app/profile/cascoamarillo.bsky.social"
   school: Thomas H. Gosnell School of Life Sciences
   college: College of Science
   university: Rochester Institute of Technology
@@ -44,6 +48,8 @@ profiles:
     url: https://www.rit.edu/directory/frvsbi-fernando-rodriguez
   - name: ORCID
     url: https://orcid.org/0000-0003-4044-8734
+  - name: Bluesky
+    url: https://bsky.app/profile/cascoamarillo.bsky.social
   # - name: Google Scholar
   #   url: https://scholar.google.com/citations?user=   # TODO
   # - name: ResearchGate
@@ -65,8 +71,6 @@ nav:
     url: /students/
   - title: Teaching
     url: /teaching/
-  - title: CV
-    url: /cv/
   # An item with a `menu:` becomes a dropdown instead of a link.
   # Add or remove entries here and the menu follows.
   - title: Resources
@@ -77,6 +81,10 @@ nav:
       - title: TE Hub
         url: https://tehub.org/
         note: Transposable element resources
+      - title: In the News
+        url: /news/
+        internal: true
+        note: Coverage of the work
 
 # --- Build settings --------------------------------------------------------
 markdown: kramdown

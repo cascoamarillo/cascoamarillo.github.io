@@ -430,27 +430,17 @@ hr {
   border-top: 1px solid var(--line);
 }
 
-/* --- research themes (full-width numbered rows) --------------------------- */
+/* --- research themes (full-width rows) ------------------------------------ */
 
 .themes { list-style: none; margin: 0; padding: 0; max-width: 920px; }
 
 .theme {
-  display: grid;
-  grid-template-columns: 74px minmax(0, 1fr);
-  gap: 1.25rem;
   padding: 1.9rem 0;
   border-bottom: 1px solid var(--line-soft);
   margin: 0;
 }
 .theme:first-child { border-top: 1px solid var(--line); }
 
-.theme-index {
-  font-family: var(--mono);
-  font-size: .8rem;
-  color: var(--accent-ink);
-  padding-top: .28rem;
-  font-variant-numeric: tabular-nums;
-}
 .theme h3 { font-size: 1.12rem; margin-bottom: .6rem; }
 .theme p { font-size: .95rem; }
 .theme p:last-of-type { margin-bottom: 0; }
@@ -574,6 +564,41 @@ hr {
 
 /* --- students ------------------------------------------------------------- */
 
+/* featured student card (photo + interests) */
+.student-card {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 1.6rem;
+  align-items: start;
+  max-width: 920px;
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.student-photo {
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--bg);
+}
+.student-photo img { width: 100%; height: 100%; object-fit: cover; }
+.student-card .student-name { font-size: 1.12rem; }
+.student-interests {
+  font-size: .92rem;
+  color: var(--body);
+  margin: .75rem 0 0;
+  padding-top: .75rem;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 700px) {
+  .student-card { grid-template-columns: 1fr; gap: 1.1rem; padding: 1.2rem; }
+  .student-photo { max-width: 190px; }
+}
+
+
 .student-row { padding: 1.15rem 0; }
 
 .student-name {
@@ -649,6 +674,15 @@ a.paper:hover {
 .service-block { margin-bottom: 1.4rem; }
 .service-block p { margin: 0; }
 .service-block .service-items { font-size: .92rem; color: var(--body); }
+.service-block .service-link { margin-top: .3rem; font-size: .88rem; }
+.service-block .service-link a {
+  font-family: var(--mono);
+  font-size: .78rem;
+  color: var(--accent-ink);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.service-block .service-link a:hover { border-bottom-color: currentColor; }
 
 /* --- buttons -------------------------------------------------------------- */
 
@@ -786,8 +820,6 @@ a.paper:hover {
 
   .pub { grid-template-columns: 1fr; gap: .3rem; }
   .pub-year { padding-top: 0; }
-  .theme { grid-template-columns: 1fr; gap: .4rem; }
-  .theme-index { padding-top: 0; }
   .row { grid-template-columns: 1fr; gap: .2rem; }
   .row-period { padding-top: 0; }
 }

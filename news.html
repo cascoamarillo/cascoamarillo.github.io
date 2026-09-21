@@ -1,0 +1,25 @@
+---
+layout: default
+title: In the News
+permalink: /news/
+description: Press coverage and features on research by Fernando Rodriguez.
+---
+
+<section class="page-head">
+  <div class="wrap">
+    <h1>In the News</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <ul class="news">
+      {% for item in site.data.news.items %}
+      <li>
+        <span class="news-source">{{ item.source }}{% if item.year %} · {{ item.year }}{% endif %}</span>
+        <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }} ↗</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
