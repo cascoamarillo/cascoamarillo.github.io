@@ -38,7 +38,7 @@ author:
   phone: "585-475-2811"
   # Replace with your own photo. Drop the file in assets/img/ and put the
   # filename here. A square image of at least 600×600 px works best.
-  photo: /assets/img/portrait.svg
+  photo: /assets/img/portrait.jpg
   photo_alt: "Portrait of Fernando Rodriguez"
   # Your CV as a PDF. Keep the file at assets/cv.pdf in the repo and replace it
   # whenever the CV changes; the filename stays the same, so no links break.
@@ -72,8 +72,8 @@ nav:
     url: /research/
   - title: Publications
     url: /publications/
-  - title: Students
-    url: /students/
+  - title: People
+    url: /people/
   - title: Teaching
     url: /teaching/
   # An item with a `menu:` becomes a dropdown instead of a link.

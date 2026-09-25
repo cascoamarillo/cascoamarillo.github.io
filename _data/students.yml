@@ -138,11 +138,9 @@ graduate:
     degree: "M.Sc. thesis"
     project: "DNA methylation variation and demethylation effects in rotifers."
     featured: true
-    photo: "placeholder.svg"       # swap for andrew-alford.jpg once you add it to assets/img/students/
-    interests: "Andrew's project asks how DNA methylation varies across bdelloid
-      rotifer lineages, and what happens to transposon control when that
-      methylation is chemically removed. He is interested in epigenetic
-      inheritance and in computational approaches to comparative genomics."
+    photo: "andrew-alford.jpg"
+    interests: "I enjoy learning things, Home lab (Both science and tech so I
+      have 2 servers), Plants, Cooking, whatever!"
     link: ""                        # optional: personal page, LinkedIn, GitHub...
     link_label: "Personal page"
 
