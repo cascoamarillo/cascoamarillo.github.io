@@ -28,7 +28,7 @@ permalink: /
         <a class="btn" href="{{ '/publications/' | relative_url }}">Publications</a>
         <a class="btn" href="mailto:{{ site.author.email }}">Email me</a>
         <a class="btn" href="{{ '/cv/' | relative_url }}">CV</a>
-        <a class="btn" href="{{ site.author.bluesky_url }}" target="_blank" rel="noopener">{{ site.author.bluesky }}</a>
+        <a class="btn" href="{{ site.author.bluesky_url }}" target="_blank" rel="noopener" title="{{ site.author.bluesky }}">{% if site.author.bluesky_icon and site.author.bluesky_icon != "" %}<img class="btn-icon" src="{{ site.author.bluesky_icon | relative_url }}" alt="" width="16" height="16">{% endif %}Bluesky</a>
       </div>
     </div>
 

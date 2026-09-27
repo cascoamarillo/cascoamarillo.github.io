@@ -28,6 +28,11 @@ author:
   title: "Molecular - Computational Biologist"
   bluesky: "@cascoamarillo.bsky.social"
   bluesky_url: "https://bsky.app/profile/cascoamarillo.bsky.social"
+  # Optional Bluesky logo for the button. Download the official butterfly SVG
+  # from Bluesky's brand page, save it as assets/img/bluesky.svg, and set:
+  #   bluesky_icon: /assets/img/bluesky.svg
+  # Left blank, the button shows the word "Bluesky" on its own.
+  bluesky_icon: ""
   school: Thomas H. Gosnell School of Life Sciences
   college: College of Science
   university: Rochester Institute of Technology

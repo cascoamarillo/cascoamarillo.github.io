@@ -15,67 +15,116 @@ description: "Research themes: horizontal gene transfer, reverse-transcriptase-r
   <div class="wrap">
     <p class="label">Lines of Research</p>
 
+    <!-- ADDING A FIGURE TO A THEME
+         1. Put the image in assets/img/research/  (JPEG for photos and
+            micrographs, PNG for plots and diagrams; about 900 px wide).
+         2. Paste the block below inside that theme, right after the
+            </div> that closes <div class="theme-text">.
+
+          <figure class="theme-figure">
+            <img src="{{ '/assets/img/research/FILENAME.jpg' | relative_url }}"
+                 alt="Short description of what the figure shows" loading="lazy">
+            <figcaption>The legend. A couple of sentences is plenty.</figcaption>
+          </figure>
+
+         The figure sits to the right of the text on a wide screen and below it
+         on a phone, and clicking it opens the full-size version. A theme with
+         no figure block looks exactly as it does now. -->
+
     <ol class="themes">
       <li class="theme">
-        <h3>Horizontal gene transfer as a source of evolutionary innovation in metazoans</h3>
-        <p>
-          Bdelloid rotifers carry an unusual proportion of coding sequence of
-          non-metazoan (mostly bacterial) origin. That makes them a natural
-          experiment in what foreign genes actually do once they are in an
-          animal genome.
-        </p>
-        <p>
-          One answer is that they can be built into the host's own regulatory
-          systems. Bdelloids lack the canonical eukaryotic C5-methyltransferases,
-          but encode N4CMT, an amino-methyltransferase captured from bacteria more
-          than 60 million years ago, which deposits N4-methylcytosine at active
-          transposons and certain tandem repeats. Another answer is chemical
-          defense: bdelloids under attack by a fungal pathogen express
-          horizontally acquired biosynthetic gene clusters resembling bacterial
-          antibiotic pathways.
-        </p>
-        <p class="card-refs">Nat Commun 2022 · Nat Commun 2024 · BioEssays 2023</p>
+        <div class="theme-index">*</div>
+        <div class="theme-body">
+          <div class="theme-text">
+              <h3>Horizontal gene transfer as a source of evolutionary innovation in metazoans</h3>
+              <p>
+                Bdelloid rotifers carry an unusual proportion of coding sequence of
+                non-metazoan (mostly bacterial) origin. That makes them a natural
+                experiment in what foreign genes actually do once they are in an
+                animal genome.
+              </p>
+              <p>
+                One answer is that they can be built into the host's own regulatory
+                systems. Bdelloids lack the canonical eukaryotic C5-methyltransferases,
+                but encode N4CMT, an amino-methyltransferase captured from bacteria more
+                than 60 million years ago, which deposits N4-methylcytosine at active
+                transposons and certain tandem repeats. Another answer is chemical
+                defense: bdelloids under attack by a fungal pathogen express
+                horizontally acquired biosynthetic gene clusters resembling bacterial
+                antibiotic pathways.
+              </p>
+              <p class="card-refs">Nat Commun 2022 · Nat Commun 2024 · BioEssays 2023</p>
+          </div>
+        </div>
       </li>
 
       <li class="theme">
-        <h3>Reverse-transcriptase-related genes and their biological significance</h3>
-        <p>
-          Retroelements are far more structurally varied than the textbook
-          categories suggest. This work characterizes Penelope-like elements
-          (PLEs) and their relatives: an ancient clade with permuted domain
-          architecture that turns out to be present across the green lineage and
-          protists and to dominate many invertebrate genomes; giant
-          reverse-transcriptase-encoding elements that reside at telomeres; and
-          LTR retrotransposons that have captured extra open reading frames
-          shared across otherwise distant retroelement types.
-        </p>
-        <p class="card-refs">Mol Biol Evol 2017 · Mol Biol Evol 2021 · Viruses 2017 · Mobile DNA 2013</p>
+        <div class="theme-index">*</div>
+        <div class="theme-body">
+          <div class="theme-text">
+              <h3>Reverse-transcriptase-related genes and their biological significance</h3>
+              <p>
+                Retroelements are far more structurally varied than the textbook
+                categories suggest. This work characterizes Penelope-like elements
+                (PLEs) and their relatives: an ancient clade with permuted domain
+                architecture that turns out to be present across the green lineage and
+                protists and to dominate many invertebrate genomes; giant
+                reverse-transcriptase-encoding elements that reside at telomeres; and
+                LTR retrotransposons that have captured extra open reading frames
+                shared across otherwise distant retroelement types.
+              </p>
+              <p class="card-refs">Mol Biol Evol 2017 · Mol Biol Evol 2021 · Viruses 2017 · Mobile DNA 2013</p>
+          </div>
+        </div>
       </li>
 
       <li class="theme">
-        <h3>Mobile genetic elements in sexual and ancient asexual taxa</h3>
-        <p>
-          Theory predicts that transposable elements should behave very
-          differently in lineages that have abandoned sex. Comparative work
-          across bdelloid rotifers and the putatively ancient asexual ostracod
-          <em>Darwinula stevensoni</em> tests that prediction against real
-          genomes, and connects the answer to the silencing machinery, including
-          the expansion of piRNA pathway components that target both transposable
-          elements and foreign genes in <em>Adineta vaga</em>.
-        </p>
-        <p class="card-refs">eLife 2021 · Genes 2021 · Genetics 2016 · Nature 2013</p>
+        <div class="theme-index">*</div>
+        <div class="theme-body">
+          <div class="theme-text">
+              <h3>Mobile genetic elements in sexual and ancient asexual taxa</h3>
+              <p>
+                Theory predicts that transposable elements should behave very
+                differently in lineages that have abandoned sex. Comparative work
+                across bdelloid rotifers and the putatively ancient asexual ostracod
+                <em>Darwinula stevensoni</em> tests that prediction against real
+                genomes, and connects the answer to the silencing machinery, including
+                the expansion of piRNA pathway components that target both transposable
+                elements and foreign genes in <em>Adineta vaga</em>.
+              </p>
+              <p class="card-refs">eLife 2021 · Genes 2021 · Genetics 2016 · Nature 2013</p>
+          </div>
+          <figure class="theme-figure">
+            <img src="{{ '/assets/img/research/pirna-coverage-adineta.jpg' | relative_url }}"
+                 alt="Charts showing that most protein-bound small RNAs in Adineta vaga map to transposable elements, with a strong 5-prime uridine bias and dense piRNA coverage over a TE-rich scaffold"
+                 loading="lazy">
+            <figcaption>Characterization of protein-bound small RNAs in
+              <em>A. vaga</em>. On the left, length distribution of sRNAs mapped
+              to annotated genomic features (TEs, CDS, UTRs, and introns). The
+              y-axis shows combined read counts for both replicates. Right figure
+              shows percentage of 5&rsquo;-terminal nucleotides (A, T, G, and C) in
+              each sRNA size class. The bottom right snapshot shows a genome
+              region with small RNA coverage along a selected scaffold with
+              full-length <em>Vesta</em> transposon.</figcaption>
+          </figure>
+        </div>
       </li>
 
       <li class="theme">
-        <h3>Phylogeography and evolutionary history of the genus <em>Rupicapra</em></h3>
-        <p>
-          Earlier work, begun at the Universidad de Oviedo, on the evolutionary
-          history of chamois. Mitochondrial and microsatellite data were combined
-          to reconstruct population contractions, expansions and hybridization
-          events across the genus, with nuclear mitochondrial pseudogenes
-          preserving traces of lineages that no longer exist as such.
-        </p>
-        <p class="card-refs">J Hered 2007 · J Hered 2009 · BMC Evol Biol 2010 · Gene 2017</p>
+        <div class="theme-index">*</div>
+        <div class="theme-body">
+          <div class="theme-text">
+              <h3>Phylogeography and evolutionary history of the genus <em>Rupicapra</em></h3>
+              <p>
+                Earlier work, begun at the Universidad de Oviedo, on the evolutionary
+                history of chamois. Mitochondrial and microsatellite data were combined
+                to reconstruct population contractions, expansions and hybridization
+                events across the genus, with nuclear mitochondrial pseudogenes
+                preserving traces of lineages that no longer exist as such.
+              </p>
+              <p class="card-refs">J Hered 2007 · J Hered 2009 · BMC Evol Biol 2010 · Gene 2017</p>
+          </div>
+        </div>
       </li>
     </ol>
   </div>

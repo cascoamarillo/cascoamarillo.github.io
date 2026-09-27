@@ -63,3 +63,54 @@
     });
   }
 })();
+
+/* --- research figures: click to view full size ---------------------------- */
+(function () {
+  var figs = document.querySelectorAll('.theme-figure img');
+  if (!figs.length) return;
+
+  var view = document.createElement('div');
+  view.className = 'figview';
+  view.setAttribute('role', 'dialog');
+  view.setAttribute('aria-modal', 'true');
+  view.innerHTML = '<figure><img alt=""><figcaption></figcaption></figure>';
+  document.body.appendChild(view);
+
+  var img = view.querySelector('img');
+  var cap = view.querySelector('figcaption');
+  var opener = null;
+
+  function open(source) {
+    var legend = source.closest('figure').querySelector('figcaption');
+    img.src = source.currentSrc || source.src;
+    img.alt = source.alt || '';
+    cap.textContent = legend ? legend.textContent : '';
+    view.classList.add('is-open');
+    opener = source;
+    view.focus();
+  }
+
+  function close() {
+    view.classList.remove('is-open');
+    img.removeAttribute('src');
+    if (opener) { opener.focus(); opener = null; }
+  }
+
+  figs.forEach(function (f) {
+    f.setAttribute('tabindex', '0');
+    f.setAttribute('title', 'Click to enlarge');
+    var hint = document.createElement('span');
+    hint.className = 'fig-zoom';
+    hint.textContent = 'Click to enlarge';
+    f.insertAdjacentElement('afterend', hint);
+    f.addEventListener('click', function () { open(f); });
+    f.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(f); }
+    });
+  });
+
+  view.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && view.classList.contains('is-open')) close();
+  });
+})();

@@ -435,11 +435,84 @@ hr {
 .themes { list-style: none; margin: 0; padding: 0; max-width: 920px; }
 
 .theme {
+  display: grid;
+  grid-template-columns: 74px minmax(0, 1fr);
+  gap: 1.25rem;
   padding: 1.9rem 0;
   border-bottom: 1px solid var(--line-soft);
   margin: 0;
 }
 .theme:first-child { border-top: 1px solid var(--line); }
+
+/* The marker in the left gutter. Change the "*" in research.html to use a
+   different character; the line-height keeps it level with the heading. */
+.theme-index {
+  font-family: var(--mono);
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--accent-ink);
+  padding-top: .5rem;
+  text-align: right;
+}
+
+/* Text alone by default; a theme that contains a figure becomes two columns. */
+.theme-body { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.6rem; }
+.theme-body:has(.theme-figure) { grid-template-columns: minmax(0, 1fr) 320px; }
+
+.theme-figure { margin: 0; align-self: start; }
+.theme-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  background: var(--surface, #fff);
+  cursor: zoom-in;
+}
+.fig-zoom {
+  display: block;
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: .4rem;
+}
+.theme-figure figcaption {
+  font-size: .8rem;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-top: .55rem;
+}
+
+/* Full-size view, opened by clicking a figure. */
+.figview {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  place-items: center;
+  padding: 2rem 1.25rem;
+  background: rgba(10, 12, 14, .88);
+  cursor: zoom-out;
+}
+.figview[open], .figview.is-open { display: grid; }
+.figview figure { margin: 0; max-width: min(1100px, 100%); max-height: 100%; overflow: auto; }
+.figview img {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: #fff;
+}
+.figview figcaption {
+  color: #e8eaed;
+  font-size: .85rem;
+  line-height: 1.55;
+  margin-top: .9rem;
+  text-align: center;
+}
 
 .theme h3 { font-size: 1.12rem; margin-bottom: .6rem; }
 .theme p { font-size: .95rem; }
@@ -702,6 +775,8 @@ a.paper:hover {
   transition: border-color .15s ease, background .15s ease, color .15s ease;
 }
 .btn:hover { border-color: var(--accent); color: var(--accent-ink); text-decoration: none; }
+/* Small logo inside a button (e.g. the Bluesky butterfly). */
+.btn-icon { width: 16px; height: 16px; display: block; flex: none; }
 .btn-primary {
   background: var(--accent);
   border-color: var(--accent);
@@ -820,6 +895,9 @@ a.paper:hover {
 
   .pub { grid-template-columns: 1fr; gap: .3rem; }
   .pub-year { padding-top: 0; }
+  .theme { grid-template-columns: 1fr; gap: .4rem; }
+  .theme-index { padding-top: 0; text-align: left; }
+  .theme-body:has(.theme-figure) { grid-template-columns: minmax(0, 1fr); }
   .row { grid-template-columns: 1fr; gap: .2rem; }
   .row-period { padding-top: 0; }
 }
