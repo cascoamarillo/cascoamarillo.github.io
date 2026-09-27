@@ -457,7 +457,13 @@ hr {
 
 /* Text alone by default; a theme that contains a figure becomes two columns. */
 .theme-body { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.6rem; }
-.theme-body:has(.theme-figure) { grid-template-columns: minmax(0, 1fr) 320px; }
+.theme-body:has(.theme-figure):not(:has(.theme-figure-wide)) {
+  grid-template-columns: minmax(0, 1fr) 320px;
+}
+/* Add class="theme-figure theme-figure-wide" for a panoramic figure: it runs
+   the full width below the text instead of sitting in a narrow side column. */
+.theme-figure-wide { max-width: 100%; }
+.theme-figure-wide figcaption { max-width: 70ch; }
 
 .theme-figure { margin: 0; align-self: start; }
 .theme-figure img {
@@ -515,6 +521,14 @@ hr {
 }
 
 .theme h3 { font-size: 1.12rem; margin-bottom: .6rem; }
+/* Optional project title under a theme heading. */
+.theme-project {
+  font-size: .9rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: -.25rem;
+  margin-bottom: .8rem;
+}
 .theme p { font-size: .95rem; }
 .theme p:last-of-type { margin-bottom: 0; }
 .theme .card-refs { border-top: 0; padding-top: .3rem; margin-top: .9rem; }
