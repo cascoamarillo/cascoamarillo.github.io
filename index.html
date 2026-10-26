@@ -4,9 +4,11 @@ title: About
 permalink: /
 ---
 
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
+<div class="wrap about-layout">
+
+  <div class="about-main">
+
+    <section class="hero about-hero">
       <h1>{{ site.author.name }}</h1>
       <p class="hero-role">{{ site.author.role }} · {{ site.author.school }}</p>
 
@@ -26,104 +28,106 @@ permalink: /
       <div class="btn-row">
         <a class="btn btn-primary" href="{{ '/research/' | relative_url }}">Research</a>
         <a class="btn" href="{{ '/publications/' | relative_url }}">Publications</a>
-        <a class="btn" href="mailto:{{ site.author.email }}">Email me</a>
         <a class="btn" href="{{ '/cv/' | relative_url }}">CV</a>
-        <a class="btn" href="{{ site.author.bluesky_url }}" target="_blank" rel="noopener" title="{{ site.author.bluesky }}">{% if site.author.bluesky_icon and site.author.bluesky_icon != "" %}<img class="btn-icon" src="{{ site.author.bluesky_icon | relative_url }}" alt="" width="16" height="16">{% endif %}Bluesky</a>
       </div>
-    </div>
+    </section>
 
-    <div>
-      <div class="portrait">
-        <img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.photo_alt }}" width="600" height="600">
+    <section class="section">
+      <p class="label">Keywords</p>
+      <ul class="chips">
+        <li>Epigenetics</li>
+        <li>Gene silencing</li>
+        <li>Transposable elements</li>
+        <li>Horizontal gene transfer</li>
+        <li>DNA methylation</li>
+        <li>Histone modification</li>
+        <li>Non-coding RNA</li>
+        <li>piRNA pathways</li>
+        <li>Retroelements</li>
+        <li>Comparative genomics</li>
+        <li>Gene editing</li>
+        <li>Transformation</li>
+        <li>Molecular evolution</li>
+        <li>Bdelloid rotifers</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <p class="label">Current lines of work</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Horizontal gene transfer as evolutionary innovation</h3>
+          <p>What foreign genes do once they arrive in an animal genome, including a bacterial methyltransferase that became part of the host's silencing machinery.</p>
+        </article>
+        <article class="card">
+          <h3>Reverse-transcriptase-related genes</h3>
+          <p>Penelope-like retroelements, permuted domain architectures, and giant retroelements that sit at chromosome ends.</p>
+        </article>
+        <article class="card">
+          <h3>Mobile elements in sexual and asexual taxa</h3>
+          <p>How transposon landscapes and the silencing pathways that contain them differ in lineages that have gone without sex for a very long time.</p>
+        </article>
       </div>
+      <div class="btn-row">
+        <a class="btn" href="{{ '/research/' | relative_url }}">All research themes</a>
+      </div>
+    </section>
 
-      <dl class="hero-facts">
-        <div class="fact"><dt>Office</dt><dd>{{ site.author.office }}<br>{{ site.author.address }}</dd></div>
-        <div class="fact"><dt>Email</dt><dd><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></dd></div>
-      </dl>
-    </div>
+    <section class="section">
+      <p class="label">Recent publications</p>
+      <ol class="pub-list">
+        {% for pub in site.data.publications.articles limit: 5 %}
+          {% include pub.html pub=pub %}
+        {% endfor %}
+      </ol>
+      <div class="btn-row">
+        <a class="btn" href="{{ '/publications/' | relative_url }}">Full publication list</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="label">Contact</p>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <p class="label">Email</p>
+          <p><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+        </div>
+        <div class="contact-item">
+          <p class="label">Phone</p>
+          <p>{{ site.author.phone }}</p>
+        </div>
+        <div class="contact-item">
+          <p class="label">Office</p>
+          <p>{{ site.author.office }}<br>{{ site.author.address }}</p>
+        </div>
+        <div class="contact-item">
+          <p class="label">Department</p>
+          <p>{{ site.author.school }}<br>{{ site.author.college }}, {{ site.author.university_short }}</p>
+        </div>
+      </div>
+    </section>
+
   </div>
-</section>
 
-<section class="section">
-  <div class="wrap">
-    <p class="label">Keywords</p>
-    <ul class="chips">
-      <li>Epigenetics</li>
-      <li>Gene silencing</li>
-      <li>Transposable elements</li>
-      <li>Horizontal gene transfer</li>
-      <li>DNA methylation</li>
-      <li>Histone modification</li>
-      <li>Non-coding RNA</li>
-      <li>piRNA pathways</li>
-      <li>Retroelements</li>
-      <li>Comparative genomics</li>
-      <li>Gene editing</li>
-      <li>Transformation</li>
-      <li>Molecular evolution</li>
-      <li>Bdelloid rotifers</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <p class="label">Current lines of work</p>
-    <div class="cards">
-      <article class="card">
-        <h3>Horizontal gene transfer as evolutionary innovation</h3>
-        <p>What foreign genes do once they arrive in an animal genome, including a bacterial methyltransferase that became part of the host's silencing machinery.</p>
-      </article>
-      <article class="card">
-        <h3>Reverse-transcriptase-related genes</h3>
-        <p>Penelope-like retroelements, permuted domain architectures, and giant retroelements that sit at chromosome ends.</p>
-      </article>
-      <article class="card">
-        <h3>Mobile elements in sexual and asexual taxa</h3>
-        <p>How transposon landscapes and the silencing pathways that contain them differ in lineages that have gone without sex for a very long time.</p>
-      </article>
+  <!-- The sidebar: photo and links. It stays in view while the page scrolls.
+       The links below the photo come from `profiles:` in _config.yml, so add
+       or remove one there and this list and the footer both follow. -->
+  <aside class="about-side">
+    <div class="portrait">
+      <img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.photo_alt }}"
+           width="600" height="600">
     </div>
-    <div class="btn-row">
-      <a class="btn" href="{{ '/research/' | relative_url }}">All research themes</a>
-    </div>
-  </div>
-</section>
 
-<section class="section">
-  <div class="wrap">
-    <p class="label">Recent publications</p>
-    <ol class="pub-list">
-      {% for pub in site.data.publications.articles limit: 5 %}
-        {% include pub.html pub=pub %}
+    <ul class="side-links">
+      <li><a href="mailto:{{ site.author.email }}"><span>Email</span></a></li>
+      {% for p in site.profiles %}
+      <li>
+        <a href="{{ p.url }}" target="_blank" rel="noopener">
+          <span>{{ p.name }}</span><span class="side-ext" aria-hidden="true">&#8599;</span>
+        </a>
+      </li>
       {% endfor %}
-    </ol>
-    <div class="btn-row">
-      <a class="btn" href="{{ '/publications/' | relative_url }}">Full publication list</a>
-    </div>
-  </div>
-</section>
+    </ul>
+  </aside>
 
-<section class="section">
-  <div class="wrap">
-    <p class="label">Contact</p>
-    <div class="contact-grid">
-      <div class="contact-item">
-        <p class="label">Email</p>
-        <p><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
-      </div>
-      <div class="contact-item">
-        <p class="label">Phone</p>
-        <p>{{ site.author.phone }}</p>
-      </div>
-      <div class="contact-item">
-        <p class="label">Office</p>
-        <p>{{ site.author.office }}<br>{{ site.author.address }}</p>
-      </div>
-      <div class="contact-item">
-        <p class="label">Department</p>
-        <p>{{ site.author.school }}<br>{{ site.author.college }}, {{ site.author.university_short }}</p>
-      </div>
-    </div>
-  </div>
-</section>
+</div>

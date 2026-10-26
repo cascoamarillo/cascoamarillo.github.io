@@ -317,6 +317,45 @@ hr {
 
 .hero { padding: clamp(2.6rem, 5vw, 4.5rem) 0 clamp(1rem, 2vw, 1.75rem); }
 
+/* --- About page: content column plus a sidebar that stays in view --------- */
+
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 250px;
+  gap: clamp(2rem, 5vw, 3.75rem);
+  align-items: start;
+}
+.about-main { min-width: 0; }
+.about-hero { padding-top: clamp(2.2rem, 4vw, 3.4rem); }
+.about-layout .wrap { padding-inline: 0; }
+
+.about-side {
+  position: sticky;
+  top: 5.5rem;              /* clears the sticky header */
+  min-width: 0;
+}
+
+.side-links {
+  list-style: none;
+  margin: 1.1rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--line-soft);
+}
+.side-links li { margin: 0; border-bottom: 1px solid var(--line-soft); }
+.side-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  padding: .55rem .15rem;
+  font-size: .87rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+.side-links a:hover { color: var(--accent-ink); }
+.side-ext { font-size: .75rem; color: var(--muted); }
+.side-links a:hover .side-ext { color: var(--accent-ink); }
+
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.55fr) minmax(0, .9fr);
@@ -860,6 +899,11 @@ a.paper:hover {
 @media (max-width: 860px) {
   .hero-grid { grid-template-columns: 1fr; }
   .portrait { max-width: 260px; }
+
+  /* Narrow screens: photo and links move above the text, nothing sticks. */
+  .about-layout { grid-template-columns: 1fr; gap: 1.75rem; }
+  .about-side { position: static; order: -1; max-width: 300px; }
+  .about-hero { padding-top: .5rem; }
 }
 
 /* The nav collapses to a menu button early, because the bar is crowded. */

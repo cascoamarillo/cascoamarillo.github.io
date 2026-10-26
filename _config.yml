@@ -53,21 +53,23 @@ author:
 
 # --- Profile links ---------------------------------------------------------
 # Delete a line to hide that link; add your real URLs where marked TODO.
+# These appear in the sidebar on the About page and in the footer of every
+# page, in the order listed. Add or remove an entry and both follow.
 profiles:
-  - name: RIT directory
-    url: https://www.rit.edu/directory/frvsbi-fernando-rodriguez
+  - name: RIT profile
+    url: https://www.rit.edu/science/directory/frvsbi-fernando-rodriguez
   - name: ORCID
     url: https://orcid.org/0000-0003-4044-8734
+  - name: Google Scholar
+    url: "https://scholar.google.com/citations?user=2nk7Gt8AAAAJ&hl=en&inst=5778974199078678248&authuser=2"
+  - name: GitHub
+    url: https://github.com/cascoamarillo
   - name: Bluesky
     url: https://bsky.app/profile/cascoamarillo.bsky.social
-  # - name: Google Scholar
-  #   url: https://scholar.google.com/citations?user=   # TODO
   # - name: ResearchGate
   #   url: https://www.researchgate.net/profile/        # TODO
   # - name: Web of Science
   #   url: https://www.webofscience.com/wos/author/record/  # TODO
-  # - name: GitHub
-  #   url: https://github.com/                          # TODO
 
 # --- Navigation ------------------------------------------------------------
 nav:
